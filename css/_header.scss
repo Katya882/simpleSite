@@ -1,0 +1,32 @@
+.head{
+	padding: 40px 35px 40px 80px;
+	background: $bg-gray;
+	.head__logo{
+	}
+	.head__menu{
+		font-family: $gilda;
+		display: flex;
+		ul{
+			width: 100%;
+		}
+		li{
+			list-style-type: none;
+			display: inline;
+		}
+		a{
+		    text-transform: uppercase;
+		    color: #000000;		    
+		    text-decoration: none;
+			font-size: 16px;
+		}
+	}
+	.head__button{
+		display: inline-block;
+		border: 1px solid #F7941E;
+		padding: 14px 24px;
+		a{
+			color:  #F7941E;
+			text-decoration: none;
+		}
+	}
+}

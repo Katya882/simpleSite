@@ -1,0 +1,70 @@
+.footer{
+	background: $bg-gray;
+	padding: 115px 0 35px 0;
+}
+.footer__logo{
+	fill: #F7941E;
+	text-align: center;
+	}
+.footer__menu{
+	font-family: $gilda;
+	font-weight: bold;
+	display: flex;
+	ul{
+		width: 100%;
+	}
+	li{
+		list-style-type: none;
+		display: inline;
+	}
+	a{
+		text-transform: uppercase;
+		color: #000000;		    
+		text-decoration: none;
+		font-size: 16px;
+	}
+}
+.footer__border{
+	border-bottom: 1px solid #000000;
+	padding-top: 43px;
+}
+.footer__share-links{
+	padding-top: 55px;
+	ul{
+		width: 100%;
+		text-align: center;
+	}
+	li{
+		list-style-type: none;
+		display: inline;}
+		i{
+			text-decoration: none;
+			color: #fff;
+			border-radius: 50%;
+			background: #000;
+			height: 38px;
+			width: 38px;
+			font-size: 20px;
+			line-height: 38px;
+			margin-left: 25px;
+			&.footer__margin-left{
+				margin-left: 0;	
+			}
+	}
+}
+.footer__signature{
+	margin-top: 73px;
+	font-family: $gilda;
+	ul{
+		width: 100%;
+		text-align: center;
+	}
+	li{
+		list-style-type: none;
+		display: inline;
+		padding-left: 14px;
+		&.footer__margin-left{
+				margin-left: 0;	
+			}
+	}
+}

@@ -1,3 +1,225 @@
+.head {
+  padding: 40px 35px 40px 80px;
+  background: #FAFAFA; }
+  .head .head__menu {
+    font-family: "Gilda Display", serif;
+    display: flex; }
+    .head .head__menu ul {
+      width: 100%; }
+    .head .head__menu li {
+      list-style-type: none;
+      display: inline; }
+    .head .head__menu a {
+      text-transform: uppercase;
+      color: #000000;
+      text-decoration: none;
+      font-size: 16px; }
+  .head .head__button {
+    display: inline-block;
+    border: 1px solid #F7941E;
+    padding: 14px 24px; }
+    .head .head__button a {
+      color: #F7941E;
+      text-decoration: none; }
 
+.footer {
+  background: #FAFAFA;
+  padding: 115px 0 35px 0; }
+
+.footer__logo {
+  fill: #F7941E;
+  text-align: center; }
+
+.footer__menu {
+  font-family: "Gilda Display", serif;
+  font-weight: bold;
+  display: flex; }
+  .footer__menu ul {
+    width: 100%; }
+  .footer__menu li {
+    list-style-type: none;
+    display: inline; }
+  .footer__menu a {
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px; }
+
+.footer__border {
+  border-bottom: 1px solid #000000;
+  padding-top: 43px; }
+
+.footer__share-links {
+  padding-top: 55px; }
+  .footer__share-links ul {
+    width: 100%;
+    text-align: center; }
+  .footer__share-links li {
+    list-style-type: none;
+    display: inline; }
+  .footer__share-links i {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50%;
+    background: #000;
+    height: 38px;
+    width: 38px;
+    font-size: 20px;
+    line-height: 38px;
+    margin-left: 25px; }
+    .footer__share-links i.footer__margin-left {
+      margin-left: 0; }
+
+.footer__signature {
+  margin-top: 73px;
+  font-family: "Gilda Display", serif; }
+  .footer__signature ul {
+    width: 100%;
+    text-align: center; }
+  .footer__signature li {
+    list-style-type: none;
+    display: inline;
+    padding-left: 14px; }
+    .footer__signature li.footer__margin-left {
+      margin-left: 0; }
+
+body {
+  max-width: 100%; }
+
+.main-text {
+  background: #F1F1F2;
+  padding: 154px 0 135px 0; }
+  .main-text h1 {
+    font-family: "Gilda Display", serif;
+    font-size: 36px;
+    line-height: 40px;
+    color: #000000;
+    text-align: left; }
+  .main-text p {
+    padding-top: 30px;
+    font-family: "Gilda Display", serif;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    line-height: 30px; }
+
+.main__padding-none {
+  padding: 0; }
+  .main__padding-none .main__text-button {
+    background: #F7941E;
+    display: inline-block;
+    border: 1px solid #F7941E;
+    padding: 14px 24px;
+    margin-top: 52px; }
+    .main__padding-none .main__text-button.backroung-none {
+      background: none; }
+      .main__padding-none .main__text-button.backroung-none a {
+        color: #F7941E; }
+    .main__padding-none .main__text-button a {
+      color: #FFF;
+      text-decoration: none;
+      font-family: "Gilda Display", serif; }
+  .main__padding-none .main__img-1 {
+    background: url(../img/3.svg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .main__padding-none .main__img-2 {
+    background: url(../img/4.svg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.block-animation .block-animation__text {
+  padding-top: 96px;
+  color: #000; }
+  .block-animation .block-animation__text h2 {
+    text-align: center;
+    font-size: 32px;
+    font-family: "Gilda Display", serif; }
+  .block-animation .block-animation__text p {
+    text-align: center;
+    font-family: "Gilda Display", serif;
+    font-size: 18px;
+    padding-top: 23px; }
+
+.block-animation__image {
+  padding: 64px 0 137px 0; }
+  .block-animation__image .block-animation__shadow {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05); }
+  .block-animation__image .block-animation__description {
+    padding: 24px 0 24px 24px; }
+    .block-animation__image .block-animation__description:hover {
+      background: #FAFAFA; }
+    .block-animation__image .block-animation__description p {
+      padding-bottom: 74px;
+      color: #000;
+      font-family: "Gilda Display", serif; }
+    .block-animation__image .block-animation__description a {
+      text-decoration: none;
+      color: #000;
+      font-family: "Roboto", sans-serif; }
+
+.contact-form {
+  background: #F7941E;
+  padding: 81px 0 69px 0; }
+  .contact-form p {
+    font-family: "Gilda Display", serif;
+    font-size: 30px; }
+    .contact-form p.contact-form__bold-text {
+      font-weight: bold;
+      padding-bottom: 15px; }
+  .contact-form .contact-form__button {
+    display: inline-block;
+    padding-top: 30px; }
+    .contact-form .contact-form__button a {
+      text-decoration: none;
+      color: #FFFFFF;
+      background: #231F20;
+      border-radius: 5px;
+      padding: 18px 24px 10px 25px;
+      font-family: "Gilda Display", serif;
+      font-size: 18px; }
+      .contact-form .contact-form__button a:hover {
+        background: none;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        color: #000; }
+
+.contact-form__padding-left {
+  padding-left: 16px; }
+
+.block-card {
+  padding-top: 88px; }
+  .block-card .block-card__text {
+    font-family: "Gilda Display", serif;
+    color: #000;
+    text-align: center; }
+    .block-card .block-card__text h2 {
+      font-size: 32px; }
+    .block-card .block-card__text p {
+      font-size: 18px;
+      padding: 23px 0 71px 0; }
+  .block-card .block-card__img {
+    background: url(../img/9.png);
+    width: 100%;
+    padding: 0; }
+  .block-card .block-card__padding-none {
+    padding: 0;
+    background: #231F20;
+    color: #fff;
+    font-family: "Gilda Display", serif; }
+    .block-card .block-card__padding-none .block-card__name {
+      padding: 63px 0 49px 78px;
+      max-width: 70%; }
+      .block-card .block-card__padding-none .block-card__name p {
+        font-size: 18px; }
+      .block-card .block-card__padding-none .block-card__name h2 {
+        font-size: 48px;
+        line-height: 58px;
+        padding: 27px 0 60px 0; }
+
+img {
+  max-width: 100%; }
 
 /*# sourceMappingURL=content.css.map */
