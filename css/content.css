@@ -219,6 +219,25 @@ body {
         line-height: 58px;
         padding: 27px 0 60px 0; }
 
+.block-text {
+  padding: 40px 0 80px 0; }
+  .block-text .block-text__description {
+    padding: 48px 0 50px 48px;
+    color: #000;
+    font-family: "Gilda Display", serif; }
+    .block-text .block-text__description:hover {
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05); }
+    .block-text .block-text__description h3 {
+      font-size: 24px; }
+    .block-text .block-text__description p {
+      padding: 16px 0 25px 0;
+      font-size: 18px; }
+    .block-text .block-text__description a {
+      text-decoration: none;
+      font-family: "Gilda Display", serif;
+      font-size: 14px;
+      color: #000; }
+
 img {
   max-width: 100%; }
 
