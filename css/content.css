@@ -1,6 +1,10 @@
 .head {
   padding: 40px 35px 40px 80px;
   background: #FAFAFA; }
+  .head.light-theme {
+    background: none; }
+  .head.night-theme {
+    background: #808080; }
   .head .head__menu {
     font-family: "Gilda Display", serif;
     display: flex; }
@@ -14,6 +18,9 @@
       color: #000000;
       text-decoration: none;
       font-size: 16px; }
+      .head .head__menu a:hover {
+        color: #F7941E;
+        transition: 1s; }
   .head .head__button {
     display: inline-block;
     border: 1px solid #F7941E;
@@ -21,10 +28,110 @@
     .head .head__button a {
       color: #F7941E;
       text-decoration: none; }
+      .head .head__button a:hover {
+        color: #000;
+        transition: 1s; }
+
+.c-hamburger {
+  display: none;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  z-index: 30;
+  width: 50px;
+  height: 40px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: none;
+  border: none; }
+  .c-hamburger:focus {
+    outline: none; }
+  .c-hamburger span {
+    display: block;
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    height: 4px;
+    background: #EEEFF1; }
+    .c-hamburger span:before {
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: #EEEFF1;
+      content: "";
+      top: -13px; }
+    .c-hamburger span:after {
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: #EEEFF1;
+      content: "";
+      top: 13px; }
+
+.c-hamburger-line {
+  background: #F7941E; }
+  .c-hamburger-line span {
+    transition: background 0s 0.3s; }
+
+.c-hamburger-line span:before {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+  transition-property: top, transform; }
+.c-hamburger-line span:after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+  transition-property: bottom, transform; }
+
+.c-hamburger-line.is-active {
+  background: #FFDEAD; }
+  .c-hamburger-line.is-active span {
+    background: none; }
+    .c-hamburger-line.is-active span:before {
+      top: 0;
+      transform: rotate(-45deg);
+      transition-delay: 0s, 0.3s; }
+    .c-hamburger-line.is-active span:after {
+      top: 0;
+      transform: rotate(45deg);
+      transition-delay: 0s, 0.3s; }
+
+.burger-menu_nav {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding-top: 10px;
+  z-index: 10;
+  width: 100%;
+  background: #F4A460;
+  padding-left: 15px; }
+  .burger-menu_nav ul {
+    text-decoration: none; }
+  .burger-menu_nav li {
+    padding-bottom: 10px; }
+  .burger-menu_nav a {
+    font-family: "Gilda Display", serif;
+    font-weight: bold; }
+  .burger-menu_nav .burger-menu_link {
+    font-family: "Gilda Display", serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    display: block; }
 
 .footer {
   background: #FAFAFA;
   padding: 115px 0 35px 0; }
+  .footer.light-theme {
+    background: none; }
+  .footer.night-theme {
+    background: #808080; }
 
 .footer__logo {
   fill: #F7941E;
@@ -85,17 +192,21 @@
 
 body {
   max-width: 100%; }
+  body.light-theme {
+    background: none; }
+  body.night-theme {
+    background: #808080; }
 
-.main-text {
+.main__text {
   background: #F1F1F2;
   padding: 154px 0 135px 0; }
-  .main-text h1 {
+  .main__text h1 {
     font-family: "Gilda Display", serif;
     font-size: 36px;
     line-height: 40px;
     color: #000000;
     text-align: left; }
-  .main-text p {
+  .main__text p {
     padding-top: 30px;
     font-family: "Gilda Display", serif;
     font-size: 20px;
@@ -129,6 +240,9 @@ body {
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover; }
+  .main__padding-none .main__description {
+    max-width: 70%;
+    margin: auto; }
 
 .block-animation .block-animation__text {
   padding-top: 96px;
@@ -146,6 +260,8 @@ body {
 .block-animation__image {
   padding: 64px 0 137px 0; }
   .block-animation__image .block-animation__shadow {
+    max-width: 270px;
+    margin: auto;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05); }
   .block-animation__image .block-animation__description {
     padding: 24px 0 24px 24px; }
@@ -222,13 +338,14 @@ body {
 .block-text {
   padding: 40px 0 80px 0; }
   .block-text .block-text__description {
-    padding: 48px 0 50px 48px;
+    padding: 48px 24px 50px 48px;
     color: #000;
     font-family: "Gilda Display", serif; }
     .block-text .block-text__description:hover {
       box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05); }
     .block-text .block-text__description h3 {
-      font-size: 24px; }
+      font-size: 24px;
+      font-weight: bold; }
     .block-text .block-text__description p {
       padding: 16px 0 25px 0;
       font-size: 18px; }

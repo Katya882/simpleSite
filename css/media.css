@@ -5,12 +5,53 @@
 
 /* Large devices (desktops, 992px and up)*/
 @media (max-width: 992px) { 
-	
+	.navigation {
+		display: none;
+	}
+	.burger{
+		display: block;
+	}
+	.frame-img{
+		width: 100%;
+	}
+	.a{
+		padding: 7px;
+	}
+	.c-hamburger{
+		display: block;
+	}
+	.burger-menu_nav.active{
+		display: block;
+	}
+	.head-none{
+		display: none;
+	}
+	.footer{
+		padding-top: 15px;
+	}
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (max-width: 768px) { 
-	
+	.block-card .block-card__padding-none .block-card__name{
+		padding: 20px;
+		max-width: 100%
+	}
+	.block-card .block-card__padding-none .block-card__name h2{
+		font-size:28px;
+		line-height: 38px;
+	}
+	.contact-form .contact-form__button{
+		padding: 0px;
+		display: block;
+		margin-top: 15px;
+	}
+	.contact-form .contact-form__button a{
+		display: block;
+	}
+	.main__text {
+    padding: 30px 0 35px 0;
+	}
 }
 
 @media (max-width: 576px) { 

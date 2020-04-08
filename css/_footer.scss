@@ -1,6 +1,12 @@
 .footer{
 	background: $bg-gray;
 	padding: 115px 0 35px 0;
+	&.light-theme{
+		background: none;
+	}
+	&.night-theme{
+		background: #808080;
+	}
 }
 .footer__logo{
 	fill: #F7941E;
